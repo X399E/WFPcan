@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>WFPデータビューワ</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js"></script>
+    </head>
+<body>
+    <h1>ログイン</h1>
+    <form method="post" action="/login">
+        <p>ユーザー名<br>
+        <input type="text" name="usrname"required="required"pattern="^[a-z]+$"></p>
+        <p>パスワード<br>
+        <input type="password" name="password"required="required"></p>
+        <p><input type="submit" value="ログイン"></p>
+    </form>
+    <form method="post" action="/login?_method=PUT">
+        <p>ユーザー登録→<input type="submit" value="登録"></p>
+    </form>
+</body>
+</html>
