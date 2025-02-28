@@ -45,7 +45,7 @@ app.get('/login',(req, res)=>{
 
 app.get('/',(req, res)=>{
     if(tokencheck(req) === true){
-        const template = fs.readFileSync(`${__dirname}/index/kinmu.ejs`, "utf-8");
+        const template = fs.readFileSync(`${__dirname}/index/index.ejs`, "utf-8");
         const data = ejs.render(template, {temp : temperature ,rpm : num});
         res.write(data);
         res.end()
